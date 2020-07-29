@@ -1,7 +1,7 @@
 /*
- * @lc app=leetcode.cn id=402 lang=cpp
+ * @lc app=leetcode.cn id=726 lang=cpp
  *
- * [402] 移掉K位数字
+ * [726] 原子的数量
  */
 
 #include <bits/stdc++.h>
@@ -10,7 +10,7 @@ using namespace std;
 // @lc code=start
 class Solution {
 public:
-    string removeKdigits(string num, int k) {
+    string countOfAtoms(string formula) {
 
     }
 };

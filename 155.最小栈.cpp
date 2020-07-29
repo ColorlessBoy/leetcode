@@ -9,26 +9,34 @@ using namespace std;
 
 // @lc code=start
 class MinStack {
+private:
+    priority_queue<int,vector<int>,greater<int>> pq;
+    stack<int> s;
 public:
     /** initialize your data structure here. */
     MinStack() {
-        
     }
     
     void push(int x) {
-        
+        s.push(x);
+        if(pq.empty() || pq.top() >= x) {
+            pq.push(x);
+        }
     }
     
     void pop() {
-        
+        if(pq.top() == s.top()) {
+            pq.pop();
+        }
+        s.pop();
     }
     
     int top() {
-        
+        return s.top();
     }
     
     int getMin() {
-        
+        return pq.top();
     }
 };
 
@@ -44,7 +52,7 @@ public:
 
 int main(int argc, char **argv) {
     Solution s;
-
+    
     return 0;
 }
 
