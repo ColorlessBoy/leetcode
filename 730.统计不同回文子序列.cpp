@@ -3,6 +3,7 @@
  *
  * [730] 统计不同回文子序列
  */
+<<<<<<< HEAD
 
 /*
  * Notes:
@@ -24,6 +25,12 @@
  * 4. 空间复杂度可以从 O(n^2) 优化到 O(n)，但是不够优雅。
  * 5. 初始状态非常微妙，长度等于１的数组一定是回文串，长度等于２的数组的回文串数量一定为２。
  */
+=======
+/*
+ * Note:
+ * 这个动态规划问题有点难, 暴力的话最高复杂度4^500，关键是我们要找到子问题。
+ * /
+>>>>>>> 66256af2306c958cc79c8137c20d2fa2ca15e19e
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -32,6 +39,7 @@ using namespace std;
 class Solution {
 public:
     int countPalindromicSubsequences(string S) {
+<<<<<<< HEAD
         int n = S.size(), base = 1000000007;
 
         if(n <= 2) return n;
@@ -77,14 +85,21 @@ public:
         }
 
         return rst;
+=======
+
+>>>>>>> 66256af2306c958cc79c8137c20d2fa2ca15e19e
     }
 };
 // @lc code=end
 
 int main(int argc, char **argv) {
     Solution s;
+<<<<<<< HEAD
     string S = "aaa";
     auto rst = s.countPalindromicSubsequences(S);
+=======
+
+>>>>>>> 66256af2306c958cc79c8137c20d2fa2ca15e19e
     return 0;
 }
 
